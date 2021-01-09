@@ -14,14 +14,12 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.common.MapBuilder;
-import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.dialog.DialogModule;
 
 import java.util.Map;
 
 import javax.annotation.Nullable;
 
-@ReactModule(name = RNPromptModule.NAME)
 public class RNPromptModule extends ReactContextBaseJavaModule implements LifecycleEventListener {
 
     /* package */ static final String FRAGMENT_TAG =
