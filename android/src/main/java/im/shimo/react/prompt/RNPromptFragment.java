@@ -12,6 +12,8 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AlertDialog;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 import javax.annotation.Nullable;
 
 public class RNPromptFragment extends DialogFragment implements DialogInterface.OnClickListener {
@@ -62,17 +64,17 @@ public class RNPromptFragment extends DialogFragment implements DialogInterface.
     }
 
     public Dialog createDialog(Context activityContext, Bundle arguments) {
-        AlertDialog.Builder builder;
+        MaterialAlertDialogBuilder builder;
         String style = arguments.containsKey(ARG_STYLE) ? arguments.getString(ARG_STYLE) : "default";
         style = style != null ? style : "default";
 
         // AlertDialog style
         switch (style) {
             case "shimo":
-                builder = new AlertDialog.Builder(activityContext, R.style.ShimoAlertDialogStyle);
+                builder = new MaterialAlertDialogBuilder(activityContext, R.style.ShimoAlertDialogStyle);
                 break;
             default:
-                builder = new AlertDialog.Builder(activityContext);
+                builder = new MaterialAlertDialogBuilder(activityContext);
         }
 
         builder.setTitle(arguments.getString(ARG_TITLE));
