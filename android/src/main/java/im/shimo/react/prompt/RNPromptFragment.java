@@ -147,7 +147,7 @@ public class RNPromptFragment extends DialogFragment implements DialogInterface.
         if (arguments.containsKey(ARG_PLACEHOLDER)) {
             input.setHint(arguments.getString(ARG_PLACEHOLDER));
         }
-        alertDialog.setView(input, 50, 15, 50, 0);
+        alertDialog.setView(input, 60, 15, 60, 0);
 
         mInputText = input;
         return alertDialog;
