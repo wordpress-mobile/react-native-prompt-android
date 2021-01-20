@@ -4,6 +4,8 @@
         <item name="colorAccent">@color/prompt_color</item>
     </style>
 
+    <style name="DialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert"/>
+
     <style name="ShimoEditTextStyle">
         <item name="android:textColor">@color/prompt_color</item>
         <item name="colorControlNormal">@color/prompt_color</item>

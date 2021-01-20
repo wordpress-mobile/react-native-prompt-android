@@ -72,7 +72,7 @@ public class RNPromptFragment extends DialogFragment implements DialogInterface.
                 builder = new AlertDialog.Builder(activityContext, R.style.ShimoAlertDialogStyle);
                 break;
             default:
-                builder = new AlertDialog.Builder(activityContext);
+                builder = new AlertDialog.Builder(activityContext, R.style.DialogStyle);
         }
 
         builder.setTitle(arguments.getString(ARG_TITLE));

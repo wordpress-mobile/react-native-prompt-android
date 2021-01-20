@@ -9,7 +9,7 @@
     "dependencies": {
         "react": "16.13.1",
         "react-native": "0.61.5",
-        "react-native-prompt-android": "0.0.5"
+        "react-native-prompt-android": "git+https://github.com/wordpress-mobile/react-native-prompt-android.git#7a376b0baf9a8d7147b981912fded54c75a9cc11"
     },
     "jest": {
         "preset": "jest-react-native"
